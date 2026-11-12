@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ShopEase | Modern E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">Shop<span>Ease</span></a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="fade-in">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to ShopEase</h1>
+                <p>Discover premium products curated just for you. Style meets performance.</p>
+                <a href="products.html" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Collection</h2>
+                <div class="product-grid" id="featured-products"></div>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="promo-card">
+                <h3>Limited Edition</h3>
+                <p>Get up to 30% off on all electronics</p>
+                <a href="products.html" class="btn-outline">Explore Deals</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 ShopEase — Premium Quality. All rights reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">✨ Fast Shipping • Secure Payments • 24/7 Support ✨</p>
+    </div>
+</footer>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

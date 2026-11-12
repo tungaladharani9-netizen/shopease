@@ -1,0 +1,65 @@
+/* ========== RESPONSIVE.CSS ========== */
+/* Mobile-First Base (0px to 767px) already handled by default grid */
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.8rem;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .cart-item {
+        gap: 2rem;
+    }
+}
+
+/* Desktop: 1200px and up */
+@media (min-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container, .nav-container {
+        padding: 0 2rem;
+    }
+}
+
+/* Hamburger menu for screens under 768px */
+@media (max-width: 767px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: var(--white);
+        width: 80%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 1.8rem;
+        transition: left 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    .cart-icon {
+        margin-left: auto;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .cart-item {
+        flex-wrap: wrap;
+    }
+}
+
+/* No horizontal scroll */
+body {
+    overflow-x: hidden;
+}

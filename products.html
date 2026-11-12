@@ -1,0 +1,31 @@
+<!-- products.html (Product Catalogue with filter/sort) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header><nav class="navbar"><div class="nav-container"><div class="logo"><a href="index.html">Shop<span>Ease</span></a></div><div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div><ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="cart.html">Cart</a></li><li><a href="checkout.html">Checkout</a></li></ul><div class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></a></div></div></nav></header>
+    <main class="container fade-in"><h2>All Products</h2><div style="display:flex; gap:1rem; margin:1rem 0; flex-wrap:wrap;"><button onclick="filterProducts('all')">All</button><button onclick="filterProducts('electronics')">Electronics</button><button onclick="filterProducts('wearables')">Wearables</button><button onclick="filterProducts('accessories')">Accessories</button><select onchange="sortProducts(this.value)"><option value="default">Default</option><option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option></select></div><div id="product-grid" class="product-grid"></div></main>
+    <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 ShopEase — Premium Quality. All rights reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem;">✨ Fast Shipping • Secure Payments • 24/7 Support ✨</p>
+    </div>
+</footer>
+    <script src="js/main.js"></script><script src="js/cart.js"></script><script src="js/products.js"></script>
+</body>
+</html>
